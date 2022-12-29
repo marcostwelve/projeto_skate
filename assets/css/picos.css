@@ -1,0 +1,36 @@
+.picos-mapa {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/mapa-picos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+}
+
+
+.cartao__botao--pico::before {
+    content: "\e908";
+    font-size: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+    .picos {
+        grid-template-areas: 
+        "titulo-pagina titulo-pagina titulo-pagina"
+        "destaque-picos destaque-picos picos-recentes"
+        "secao-picos secao-picos secao-picos"
+        ;
+    }
+    .destaque-picos {
+        grid-area: destaque-picos;
+    }
+
+    .picos-recentes {
+        grid-area:picos-recentes;
+    }
+
+    .secao-picos {
+        grid-area: secao-picos;
+    }
+}    
